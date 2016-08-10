@@ -1,36 +1,43 @@
- section {
-            width: 94%;
-            margin: 0 auto;
-            border:1px solid black;
-        }
-        
-        .picture{
-            margin: 20px 0px;
-            border-top: 1px solid gray;
-            border-left: 1px solid gray;
-            border-right: 3px solid black;
-            border-bottom: 3px solid black;
-            padding: 30px;
-        }
-          .images{
-            float:left;
-            border:1px solid black;
-            height:150px;
-            width:200px;
-          }
-          .images li{
-            list-style-type: none;
-            margin-top: 5px;
-            margin-left: 20px;
-        }
-        .images li img{
-          border:1px solid black;
-          height:100px;
-          width:150px;
-          display:block;
-          margin:10px auto;
-          
-        }
-          .images p{
-            text-align: center;
-          }
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Picture</title>
+ </head>
+ <style>
+   body{
+    margin:0;
+    padding:0;
+    background-color: white;
+   }
+   .container{
+    border:1px solid gray;
+    height:200px;
+    width:400px;
+    margin:0 auto;
+    background-color: #ccc;
+    margin-top: 250px;
+    /*position:fixed;*/
+
+       }
+    #top-left{
+      height:50px;
+      width:50px;
+      -webkit-border-radius:50px 0 0 0;
+      background-color: yellow;
+      
+    }
+    #bottom-right{
+      /* height:50px;
+      width:50px;
+      -webkit-border-radius:50px 0 0 0;
+      background-color: yellow;*/
+    }
+ </style>
+ <body>
+ <div class="container">
+   <div id="top-left"></div>
+  <div id="bottom-right"></div>
+ </div>
+ </body>
+ </html>

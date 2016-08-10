@@ -2,91 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>23</title>
-    <style type="text/css">
-    body {
-        margin: 0;
-        padding: 0;
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    header {
+        height: 500px;
+        width: 600px;
+        margin: 40px;
+        background-color: red;
+        position: relative;
     }
-     
-    .button{
-        width:70%;
-        height:50px;
-        line-height: 50px;
-        background-color: blue;
-         /*float:right;*/
-       text-align: center;
-        border-radius: 12px;
-        margin-left: 15%;
+    
+    .wrap {
+        background-color: #C1C1C1;
+        height: 200px;
+        width: 400px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
     }
-    .dd{
-        height:40px;
-        width:80px;
-        background-color: blue;
-        font-size: 15px;
-        color:white;
-        margin-top: 5px;
-    }
-    a{
-        display: block;
-        width: 90%;
+    
+    .box1 {
+        background-color: #F3C517;
         height: 50px;
-        line-height: 50px;
-        background-color: blue;
-        margin: 0 auto;
-        border-radius: 12px;
-       text-align: center;
-       color:black;
-       text-decoration: none;
+        width: 50px;
+        border-radius: 0 50px 0 0;
     }
-    button:focus{
-        outline: none;
-        border:0;
-    }
-    img{
-        float:right;
+    
+    .box2 {
+        background-color: #F3C517;
+        height: 50px;
+        width: 50px;
+        border-radius: 50px 0 0 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
     </style>
 </head>
 
 <body>
-    <dl>
-        <dt>请输入邮箱地址</dt>
-        <dd>
-            <input type="text" name="">
-            <div>邮箱地址请按照要求格式输入
-            </div>
-        </dd>
-    </dl>
-    <dl>
-        <dt>请输入邮箱地址</dt>
-        <dd>
-            <input type="text" name="">
-            <div>邮箱地址请按照要求格式输入
-            </div>
-        </dd>
-    </dl>
-    <div class="button">
-        <!-- <input class="dd" type="button" name="submit" value=""> -->
-        确认提交
-    </div>
-    <br>
-    <a href="#">确认提交</a>
-    <p>在下面的段落中，我们添加了一个样式为 <b>float:right</b> 的图像。结果是这个图像会浮动到段落的右侧。</p>
-<p>
-<img src="/i/eg_cute.gif" />
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-This is some text. This is some text. This is some text.
-</p>
+    <header>
+        <div class="wrap">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+    </header>
 </body>
 
 </html>
