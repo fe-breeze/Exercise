@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+.wrapper{
+    height:300px;
+    width:500px;
+    top:0;
+    left:0;
+    right:0;
+     bottom:0;
+     margin:auto;
+    position: fixed;
+    background-color: green;
+    border:5px solid black;
+}
+
+.container {
+    height: 200px;
+    width: 400px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    background-color: gray;
+    border: 1px solid brown;
+}
+
+.box1{
+    height:50px;
+    width:50px;
+    background-color: green;
+    border-radius:0 0 50px 0;
+    position:absolute;
+
+}
+.box2{
+    height:50px;
+    width:50px;
+    bottom:0;
+    right:0;
+    border-radius:50px 0 0 0;
+    position:absolute;
+    background-color: yellow;
+}
+.box3{
+    height:50px;
+    width:50px;
+    left:0;
+    bottom:0;
+    border-radius: 0 50px 0 0;
+    position:absolute;
+    background-color: pink;
+}
+.box4{
+    height:50px;
+    width:50px;
+    top:0;
+    right:0;
+    border-radius:0 0 0 50px;
+    /*border-radius: 50%;*/
+    position:absolute;
+    background-color: pink;
+}
+</style>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+    </div>
+</body>
+
+</html>
