@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #D6D6D6;
+  }
+  
+  header {
+    height: 60px;
+    background-color: #262626;
+  }
+  
+  header img {
+    height: 80px;
+    margin-left: 40px;
+  }
+  
+  .list {
+    float: right;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .list li {
+    float: left;
+    margin-right: 20px;
+    line-height: 60px;
+  }
+  
+  .list li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .list li:last-child a {
+    color: #c3c3c3;
+  }
+  
+  .wrapper {
+    width: 94%;
+    margin: 0 auto;
+  }
+  
+  section {
+    margin: 10px 0;
+    border-top: 1px solid #C2C2C2;
+    border-left: 1px solid #C2C2C2;
+    border-right: 3px solid #717171;
+    border-bottom: 3px solid #717171;
+    background-color: #fff;
+    padding: 26px;
+  }
+  
+  .article-1 {
+    font-size: 24px;
+  }
+  
+  .article-2 {
+    color: #5E5B5C;
+    font-size: 18px;
+  }
+  
+  .author {
+    font-size: 14px;
+    color: #63618F;
+  }
+  
+  .paragraph {
+    text-indent: 2em;
+    font-size: 16px;
+    line-height: 2
+  }
+  
+  .project li {
+    list-style-type: none;
+    margin-top: 10px;
+  }
+  
+  .picture-list li {
+    list-style-type: none;
+    border: 1px solid #c3c3c3;
+    width: 300px;
+    margin-top: 10px;
+  }
+  
+  .picture-list li p {
+    text-align: center;
+  }
+  
+  .picture-list li img {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+  }
+  
+  .rank li {
+    margin-top: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  
+  table tr {
+    height: 28px;
+    font-size: 14px;
+  }
+  
+  table tr td:first-child,
+  table tr td:first-child+td {
+    width: 40%;
+  }
+  
+  .thead {
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .tfoot {
+    background-color: #c3c3c3;
+    color: #000;
+  }
+  
+  section:last-of-type {
+    margin-right: 20px;
+  }
+  
+  section:last-of-type form {
+    font-size: 12px;
+  }
+  
+  .side-title {
+    border-left: 4px solid #C1C1C1;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 15px;
+    font-size: 16px;
+  }
+  
+  dl {
+    margin-left: 20%;
+    clear: left;
+  }
+  
+  dl dt {
+    float: left;
+    margin-right: 16px;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    text-align: right;
+    width: 150px;
+  }
+  
+  dl dt+dd {
+    margin-left: 0;
+    float: left;
+  }
+  
+  dl dt+dd div input {
+    height: 18px;
+  }
+  
+  dl dt+dd div:last-child {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #c3c3c3;
+  }
+  
+  dl dt+dd div:only-child {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    width: 100%;
+    height: 40px;
+    vertical-align: middle;
+    margin: 108px auto 0;
+    display: block;
+    background-color: #293FC9;
+    outline: none;
+    border: 0;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .form-item {
+    line-height: 24px;
+    margin-bottom: 6px;
+  }
+  
+  .textarea-item {
+    padding-top: 6px;
+  }
+  
+  textarea {
+    font-size: 16px;
+  }
+  
+  footer {
+    background-color: #000;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="http://imgsrc.baidu.com/forum/w%3D580/sign=0d12d5597d1ed21b79c92eed9d6fddae/0a9c7b899e510fb385a2333cd933c895d0430cb7.jpg" alt="logo">
+    <ul class="list">
+      <li>
+        <a href="#">导航链接一</a>
+      </li>
+      <li>
+        <a href="#">导航链接二</a>
+      </li>
+      <li>
+        <a href="#">导航链接三</a>
+      </li>
+      <li>
+        <a href="#">导航链接四</a>
+      </li>
+    </ul>
+  </header>
+  <div class="wrapper">
+    <section>
+      <h1 class="article-1">文章一级标题</h1>
+      <h2 class="article-2">文章二级标题</h2>
+      <p class="author">文章作者&nbsp;文章发表时间</p>
+      <p class="paragraph">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+        <br>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://www.baidu.com" target="_blank">这里有一个链接连接到百度，在新网页中打开</a>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有一个粗体字</strong>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+      <img src="http://img4.cache.netease.com/ent/2016/7/19/201607191310274eec0_550.jpg" alt="巴图">
+      <p class="paragraph">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+        <br>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://www.baidu.com" target="_blank">这里有一个链接连接到百度，在新网页中打开</a>，这是一个很长很长的段落，这是一个很长很长的段落，<em>这里被强调了</em>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有一个粗体字</strong>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+    </section>
+    <section>
+      <h1 class="article-1">另一篇文章一级标题</h1>
+      <h2 class="article-2">文章二级标题</h2>
+      <p class="author">文章作者&nbsp;文章发表时间</p>
+      <p class="paragraph">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+        <br>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://www.baidu.com" target="_blank">这里有一个链接连接到百度，在新网页中打开</a>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有一个粗体字</strong>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+      <img src="http://img4.cache.netease.com/ent/2016/7/19/201607191310274eec0_550.jpg" alt="巴图">
+      <ul class="project">
+        <li>项目列表一</li>
+        <li>项目列表二</li>
+        <li>项目列表三</li>
+      </ul>
+    </section>
+    <section>
+      <h1 class="article-1">图片</h1>
+      <ul class="picture-list">
+        <li>
+          <p>好看的图片</p>
+          <img src="http://img4.cache.netease.com/ent/2016/7/19/201607191310274eec0_550.jpg" alt="巴图">
+        </li>
+        <li>
+          <p>好看的图片</p>
+          <img src="http://img4.cache.netease.com/ent/2016/7/19/201607191310274eec0_550.jpg" alt="巴图">
+        </li>
+        <li>
+          <p>好看的图片</p>
+          <img src="http://img4.cache.netease.com/ent/2016/7/19/201607191310274eec0_550.jpg" alt="巴图">
+        </li>
+        <li>
+          <p>好看的图片</p>
+          <img src="http://img4.cache.netease.com/ent/2016/7/19/201607191310274eec0_550.jpg" alt="巴图">
+        </li>
+        <li>
+          <p>好看的图片</p>
+          <img src="http://img4.cache.netease.com/ent/2016/7/19/201607191310274eec0_550.jpg" alt="巴图">
+        </li>
+        <li>
+          <p>好看的图片</p>
+          <img src="http://img4.cache.netease.com/ent/2016/7/19/201607191310274eec0_550.jpg" alt="巴图">
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h1 class="article-1">最后一篇文章一级标题</h1>
+      <h2 class="article-2">文章二级标题</h2>
+      <p class="author">文章作者&nbsp;文章发表时间</p>
+      <ol class="rank">
+        <li>排名1
+        </li>
+        <li>排名2
+        </li>
+        <li>排名3
+        </li>
+      </ol>
+      下面是一个表格，我这里给表格加了一个border="1"，好让你看出来是个表格，你们不用写html的时候不用加
+      <table border="1">
+        <tr class="thead">
+          <th>表头</th>
+          <th>表头</th>
+          <th>表头</th>
+        </tr>
+        <tr>
+          <td>表内容单元格</td>
+          <td>表内容单元格</td>
+          <td><a href="#">操作</a></td>
+        </tr>
+        <tr>
+          <td>表内容单元格</td>
+          <td>表内容单元格</td>
+          <td><a href="#">操作</a></td>
+        </tr>
+        <tr>
+          <td>表内容单元格</td>
+          <td>表内容单元格</td>
+          <td><a href="#">操作</a></td>
+        </tr>
+        <tr>
+          <td>表内容单元格</td>
+          <td>表内容单元格</td>
+          <td><a href="#">操作</a></td>
+        </tr>
+        <tr class="tfoot">
+          <th>总计</th>
+          <th colspan="2">1000</th>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h1 class="side-title">这里以后是一个侧栏，这是侧栏的标题</h1>
+      <form>
+        <dl>
+          <dt>请输入邮箱地址</dt>
+          <dd>
+            <div>
+              <input type="text" value="请输入邮箱地址">
+            </div>
+            <div>邮箱地址请按照要求格式输入</div>
+          </dd>
+        </dl>
+        <dl>
+          <dt>请输入密码</dt>
+          <dd>
+            <div>
+              <input type="password" value="请输入邮箱地址">
+            </div>
+          </dd>
+        </dl>
+        <dl>
+          <dt>请输入重复输入密码</dt>
+          <dd>
+            <div>
+              <input type="password" value="请输入邮箱地址">
+            </div>
+            <div>邮箱地址请按照要求格式输入</div>
+          </dd>
+        </dl>
+        <dl>
+          <dt>性别</dt>
+          <dd class="form-item">
+            <label>
+              <input type="radio" checked name="sex">男
+            </label>
+            <label>
+              <input type="radio" name="sex">女
+            </label>
+          </dd>
+        </dl>
+        <dl>
+          <dt>城市</dt>
+          <dd class="form-item">
+            <select name="address" id="">
+              <option value="beijing">北京</option>
+              <option value="shanghai">上海</option>
+              <option value="xian">西安</option>
+            </select>
+          </dd>
+        </dl>
+        <dl>
+          <dt>爱好</dt>
+          <dd class="form-item">
+            <label for="">
+              <input type="checkbox">运动
+            </label>
+            <label for="">
+              <input type="checkbox">艺术
+            </label>
+            <label for="">
+              <input type="checkbox">科学
+            </label>
+          </dd>
+        </dl>
+        <dl>
+          <dt>个人描述</dt>
+          <dd class="textarea-item">
+            <textarea name="" id="" cols="80" rows="4">这是一个多行输入框，输入您的个人描述</textarea>
+          </dd>
+        </dl>
+        <button type="button">确认提交</button>
+      </form>
+    </section>
+  </div>
+  <footer>
+    版权所有&copy;
+  </footer>
+</body>
+
+</html>

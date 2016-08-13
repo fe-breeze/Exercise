@@ -1,419 +1,125 @@
 <!DOCTYPE html>
-<!-- saved from url=(0051)file:///home/cc/%E4%B8%8B%E8%BD%BD/task2%20(1).html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <title>Document</title>
-  <style>
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: #D6D6D6;
-  }
-  
-  header {
-    height: 60px;
-    background-color: #262626;
-  }
-  
-  header img {
-    height: 80px;
-    margin-left: 40px;
-  }
-  
-  .list {
-    float: right;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  .list li {
-    float: left;
-    margin-right: 20px;
-    line-height: 60px;
-  }
-  
-  .list li a {
-    display: inline-block;
-    color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-  }
-  
-  .list li:last-child a {
-    color: #c3c3c3;
-  }
-  
-  .wrapper {
-    width: 94%;
-    margin: 0 auto;
-  }
-  
-  section {
-    margin: 10px 0;
-    border-top: 1px solid #C2C2C2;
-    border-left: 1px solid #C2C2C2;
-    border-right: 3px solid #717171;
-    border-bottom: 3px solid #717171;
-    background-color: #fff;
-    padding: 26px;
-  }
-  
-  .article-1 {
-    font-size: 24px;
-  }
-  
-  .article-2 {
-    color: #5E5B5C;
-    font-size: 18px;
-  }
-  
-  .author {
-    font-size: 14px;
-    color: #63618F;
-  }
-  
-  .paragraph {
-    text-indent: 2em;
-    font-size: 16px;
-    line-height: 2
-  }
-  
-  .project li {
-    list-style-type: none;
-    margin-top: 10px;
-  }
-  
-  .picture-list li {
-    list-style-type: none;
-    border: 1px solid #c3c3c3;
-    width: 300px;
-    margin-top: 10px;
-  }
-  
-  .picture-list li p {
-    text-align: center;
-  }
-  
-  .picture-list li img {
-    display: block;
-    width: 90%;
-    margin: 20px auto;
-  }
-  
-  .rank li {
-    margin-top: 10px;
-  }
-  
-  table {
-    width: 100%;
-    border: 1px solid #c3c3c3;
-    background-color: #fff;
-    color: #000;
-    text-align: left;
-    border-collapse: collapse;
-  }
-  
-  table tr {
-    height: 28px;
-    font-size: 14px;
-  }
-  
-  table tr td:first-child,
-  table tr td:first-child+td {
-    width: 40%;
-  }
-  
-  .thead {
-    background-color: #000;
-    color: #fff;
-  }
-  
-  .tfoot {
-    background-color: #c3c3c3;
-    color: #000;
-  }
-  
-  section:last-of-type {
-    margin-right: 20px;
-  }
-  
-  section:last-of-type form {
-    font-size: 12px;
-  }
-  
-  .side-title {
-    border-left: 4px solid #C1C1C1;
-    height: 34px;
-    line-height: 34px;
-    padding-left: 15px;
-    font-size: 16px;
-  }
-  
-  dl {
-    margin-left: 20%;
-    clear: left;
-  }
-  
-  dl dt {
-    float: left;
-    margin-right: 16px;
-    font-size: 12px;
-    height: 24px;
-    line-height: 24px;
-    text-align: right;
-    width: 150px;
-  }
-  
-  dl dt+dd {
-    margin-left: 0;
-    float: left;
-  }
-  
-  dl dt+dd div input {
-    height: 18px;
-  }
-  
-  dl dt+dd div:last-child {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    font-size: 12px;
-    color: #c3c3c3;
-  }
-  
-  dl dt+dd div:only-child {
-    margin-top: 0;
-    margin-bottom: 20px;
-  }
-  
-  button {
-    width: 100%;
-    height: 40px;
-    vertical-align: middle;
-    margin: 108px auto 0;
-    display: block;
-    background-color: #293FC9;
-    outline: none;
-    border: 0;
-    border-radius: 12px;
-    font-size: 16px;
-    color: #fff;
-  }
-  
-  .form-item {
-    line-height: 24px;
-    margin-bottom: 6px;
-  }
-  
-  .textarea-item {
-    padding-top: 6px;
-  }
-  
-  textarea {
-    font-size: 16px;
-  }
-  
-  footer {
-    background-color: #000;
-    font-size: 14px;
-    color: #fff;
-    text-align: center;
-    height: 60px;
-    line-height: 60px;
-  }
-  </style>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BUJU</title>
 </head>
+<style>
+body {
+    margin: 20px 30px 200px 30px;
+    border: 1px solid black;
+    width: 94%;
+    height: 450px;
+}
+
+.wrapper {
+    width: 180px;
+    height: 120px;
+    border: 1px solid black;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #FFC1E0;
+}
+
+.head {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+}
+
+.images {
+    width: 140px;
+    height: 400px;
+    border: 3px solid black;
+    margin-right: 30px;
+    margin-top: 20px;
+    float: right;
+    background-color: #FFC1E0;
+}
+
+.images1 {
+    height: 80px;
+    width: 80px;
+    border: 3px solid blue;
+    margin-top: 10px;
+    margin-right: 30px;
+    float: right;
+}
+
+.images2 {
+    height: 80px;
+    width: 80px;
+    border: 3px solid blue;
+    margin-right: 30px;
+    margin-top: 10px;
+    float: right;
+}
+
+.images3 {
+    height: 80px;
+    width: 80px;
+    border: 3px solid blue;
+    margin-right: 30px;
+    margin-top: 10px;
+    float: right;
+}
+
+.images4 {
+    height: 80px;
+    width: 80px;
+    border: 3px solid blue;
+    margin-right: 30px;
+    margin-top: 10px;
+    float: right;
+}
+
+.middle {
+    width: 50%;
+    height: 300px;
+    margin-left: 300px;
+    margin-top: 50px;
+    border: 1px solid black;
+    position: absolute;
+    background-color: #F0F0F0;
+}
+
+.head1 {
+    text-align: center;
+}
+
+.p1 {
+    text-indent: 2em;
+}
+
+.p2 {
+    text-indent: 2em;
+}
+</style>
 
 <body>
-  <header>
-    <img src="./task3_files/0a9c7b899e510fb385a2333cd933c895d0430cb7.jpg" alt="logo">
-    <ul class="list">
-      <li>
-        <a href="file:///home/cc/%E4%B8%8B%E8%BD%BD/task2%20(1).html#">导航链接一</a>
-      </li>
-      <li>
-        <a href="file:///home/cc/%E4%B8%8B%E8%BD%BD/task2%20(1).html#">导航链接二</a>
-      </li>
-      <li>
-        <a href="file:///home/cc/%E4%B8%8B%E8%BD%BD/task2%20(1).html#">导航链接三</a>
-      </li>
-      <li>
-        <a href="file:///home/cc/%E4%B8%8B%E8%BD%BD/task2%20(1).html#">导航链接四</a>
-      </li>
-    </ul>
-  </header>
-  <div class="wrapper">
-    <section>
-      <h1 class="article-1">文章一级标题</h1>
-      <h2 class="article-2">文章二级标题</h2>
-      <p class="author">文章作者&nbsp;文章发表时间</p>
-      <p class="paragraph">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
-        <br>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://www.baidu.com/" target="_blank">这里有一个链接连接到百度，在新网页中打开</a>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有一个粗体字</strong>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
-      <img src="./task3_files/201607191310274eec0_550.jpg" alt="巴图">
-      <p class="paragraph">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
-        <br>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://www.baidu.com/" target="_blank">这里有一个链接连接到百度，在新网页中打开</a>，这是一个很长很长的段落，这是一个很长很长的段落，<em>这里被强调了</em>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有一个粗体字</strong>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
-    </section>
-    <section>
-      <h1 class="article-1">另一篇文章一级标题</h1>
-      <h2 class="article-2">文章二级标题</h2>
-      <p class="author">文章作者&nbsp;文章发表时间</p>
-      <p class="paragraph">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
-        <br>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://www.baidu.com/" target="_blank">这里有一个链接连接到百度，在新网页中打开</a>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有一个粗体字</strong>，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
-      <img src="./task3_files/201607191310274eec0_550.jpg" alt="巴图">
-      <ul class="project">
-        <li>项目列表一</li>
-        <li>项目列表二</li>
-        <li>项目列表三</li>
-      </ul>
-    </section>
-    <section>
-      <h1 class="article-1">图片</h1>
-      <ul class="picture-list">
-        <li>
-          <p>好看的图片</p>
-          <img src="./task3_files/201607191310274eec0_550.jpg" alt="巴图">
-        </li>
-        <li>
-          <p>好看的图片</p>
-          <img src="./task3_files/201607191310274eec0_550.jpg" alt="巴图">
-        </li>
-        <li>
-          <p>好看的图片</p>
-          <img src="./task3_files/201607191310274eec0_550.jpg" alt="巴图">
-        </li>
-        <li>
-          <p>好看的图片</p>
-          <img src="./task3_files/201607191310274eec0_550.jpg" alt="巴图">
-        </li>
-        <li>
-          <p>好看的图片</p>
-          <img src="./task3_files/201607191310274eec0_550.jpg" alt="巴图">
-        </li>
-        <li>
-          <p>好看的图片</p>
-          <img src="./task3_files/201607191310274eec0_550.jpg" alt="巴图">
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h1 class="article-1">最后一篇文章一级标题</h1>
-      <h2 class="article-2">文章二级标题</h2>
-      <p class="author">文章作者&nbsp;文章发表时间</p>
-      <ol class="rank">
-        <li>排名1
-        </li>
-        <li>排名2
-        </li>
-        <li>排名3
-        </li>
-      </ol>
-      下面是一个表格，我这里给表格加了一个border="1"，好让你看出来是个表格，你们不用写html的时候不用加
-      <table border="1">
-        <tbody><tr class="thead">
-          <th>表头</th>
-          <th>表头</th>
-          <th>表头</th>
-        </tr>
-        <tr>
-          <td>表内容单元格</td>
-          <td>表内容单元格</td>
-          <td><a href="file:///home/cc/%E4%B8%8B%E8%BD%BD/task2%20(1).html#">操作</a></td>
-        </tr>
-        <tr>
-          <td>表内容单元格</td>
-          <td>表内容单元格</td>
-          <td><a href="file:///home/cc/%E4%B8%8B%E8%BD%BD/task2%20(1).html#">操作</a></td>
-        </tr>
-        <tr>
-          <td>表内容单元格</td>
-          <td>表内容单元格</td>
-          <td><a href="file:///home/cc/%E4%B8%8B%E8%BD%BD/task2%20(1).html#">操作</a></td>
-        </tr>
-        <tr>
-          <td>表内容单元格</td>
-          <td>表内容单元格</td>
-          <td><a href="file:///home/cc/%E4%B8%8B%E8%BD%BD/task2%20(1).html#">操作</a></td>
-        </tr>
-        <tr class="tfoot">
-          <th>总计</th>
-          <th colspan="2">1000</th>
-        </tr>
-      </tbody></table>
-    </section>
-    <section>
-      <h1 class="side-title">这里以后是一个侧栏，这是侧栏的标题</h1>
-      <form>
-        <dl>
-          <dt>请输入邮箱地址</dt>
-          <dd>
-            <div>
-              <input type="text" value="请输入邮箱地址">
-            </div>
-            <div>邮箱地址请按照要求格式输入</div>
-          </dd>
-        </dl>
-        <dl>
-          <dt>请输入密码</dt>
-          <dd>
-            <div>
-              <input type="password" value="请输入邮箱地址">
-            </div>
-          </dd>
-        </dl>
-        <dl>
-          <dt>请输入重复输入密码</dt>
-          <dd>
-            <div>
-              <input type="password" value="请输入邮箱地址">
-            </div>
-            <div>邮箱地址请按照要求格式输入</div>
-          </dd>
-        </dl>
-        <dl>
-          <dt>性别</dt>
-          <dd class="form-item">
-            <label>
-              <input type="radio" checked="" name="sex">男
-            </label>
-            <label>
-              <input type="radio" name="sex">女
-            </label>
-          </dd>
-        </dl>
-        <dl>
-          <dt>城市</dt>
-          <dd class="form-item">
-            <select name="address" id="">
-              <option value="beijing">北京</option>
-              <option value="shanghai">上海</option>
-              <option value="xian">西安</option>
-            </select>
-          </dd>
-        </dl>
-        <dl>
-          <dt>爱好</dt>
-          <dd class="form-item">
-            <label for="">
-              <input type="checkbox">运动
-            </label>
-            <label for="">
-              <input type="checkbox">艺术
-            </label>
-            <label for="">
-              <input type="checkbox">科学
-            </label>
-          </dd>
-        </dl>
-        <dl>
-          <dt>个人描述</dt>
-          <dd class="textarea-item">
-            <textarea name="" id="" cols="80" rows="4">这是一个多行输入框，输入您的个人描述</textarea>
-          </dd>
-        </dl>
-        <button type="button">确认提交</button>
-      </form>
-    </section>
-  </div>
-  <footer>
-    版权所有©
-  </footer>
-</body></html>
+    <div class="wrapper">
+        <h1 class="head">my logo</h1>
+        <img class="logo" src="images/eg_cute.gif">
+    </div>
+    <div class="images">
+        <img class="images1" src="./task3_files/201607191310274eec0_550.jpg" title="A kind boy">
+        <img class="images2" src="./task3_files/201607191310274eec0_550.jpg" title="A kind boy">
+        <img class="images3" src="./task3_files/201607191310274eec0_550.jpg" title="A kind boy">
+        <img class="images4" src="./task3_files/201607191310274eec0_550.jpg" title="A kind boy">
+    </div>
+    <div class="middle">
+        <h1 class="head1">团队介绍</h1>
+        <p class="p1">黃藥師，「天下五絕」之一「東邪」。桃花島島主，黃蓉之父。黃藥師形相清癯，身材高瘦，風姿雋爽，蕭疏軒舉，湛然若神。身穿青衣直綴，頭戴同色方巾，文士模樣。個性離經叛道，狂傲不羈。性情孤僻，行動怪異，身形飄忽，有如鬼魅。「桃花影落飛神劍，碧海潮生按玉簫」是他一生武功的寫照，武功造詣非凡，已臻化境，為金庸小說中武功最絕頂的高手之一。</p>
+        <p class="p2">歐陽鋒，「天下五絕」之一「西毒」。歐陽鋒身材高大，身穿白衣，高鼻深目，臉鬚棕黃，英氣勃勃，目光如電，眼神如刀似劍，甚是鋒鋭，語聲鏗鏗似金屬之音。應為歐洲白人血統。此人兇狠毒辣，為求奪得「武功天下第一」的名號不擇手段，是金庸武俠小說中的著名反派角色和武功最絕頂的高手之一。</p>
+    </div>
+</body>
+
+</html>

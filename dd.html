@@ -5,52 +5,105 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-    header {
-        height: 500px;
-        width: 600px;
-        margin: 40px;
-        background-color: red;
-        position: relative;
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        height: 100%;
+    }
+    
+    body {
+        box-sizing: border-box;
+        border: 1px solid red;
+        padding: 20px;
+        height: 100%;
     }
     
     .wrap {
-        background-color: #C1C1C1;
-        height: 200px;
-        width: 400px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        margin: auto;
+        padding: 20px;
+        border: 1px solid red;
+        background-color: blue;
+        overflow: hidden;
     }
     
-    .box1 {
-        background-color: #F3C517;
-        height: 50px;
-        width: 50px;
-        border-radius: 0 50px 0 0;
+    .left {
+        border: 1px solid red;
+        padding: 20px;
+        background-color: #0e0e0e;
+        width: 200px;
+        float: left;
+        color: #fff;
+        box-sizing: border-box;
     }
     
-    .box2 {
-        background-color: #F3C517;
-        height: 50px;
-        width: 50px;
-        border-radius: 50px 0 0 0;
-        position: absolute;
-        bottom: 0;
-        right: 0;
+    .logo {
+        border: 1px solid red;
+        width: 80px;
+        height: 80px;
+        background-color: #00ff00;
+        float: left;
+        margin-right: 20px;
+    }
+    
+    .main {
+        border: 1px solid red;
+        padding: 20px;
+        margin-right: 140px;
+        margin-left: 220px;
+        background-color: #00ff00;
+        min-width: 300px;
+    }
+    
+    .right {
+        float: right;
+        border: 1px solid red;
+        background-color: #00ff00;
+        width: 120px;
+        box-sizing: border-box;
+    }
+    
+    .right-box {
+        border: 1px solid red;
+        width: 80px;
+        height: 80px;
+        background-color: #000;
+        margin: 20px;
+    }
+    p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    p:first-child{
+        margin-top: 0;
+    }
+    p:last-child{
+        margin-bottom: 0;
     }
     </style>
 </head>
 
 <body>
-    <header>
-        <div class="wrap">
-            <div class="box1"></div>
-            <div class="box2"></div>
+    <div class="wrap">
+        <div class="left">
+            <div class="logo">fdsfsd</div>fdsdfsf
         </div>
-    </header>
+        <div class="right">
+            <div class="right-box"></div>
+            <div class="right-box"></div>
+            <div class="right-box"></div>
+            <div class="right-box"></div>
+        </div>
+        <div class="main">
+            <p>fsdfdsfsdfsfs</p>
+            <p>fsdfdsfsdfsfs</p>
+            <p>fsdfdsfsdfsfs</p>
+            <p>fsdfdsfsdfsfs</p>
+            <p>fsdfdsfsdfsfs</p>
+            <p>fsdfdsfsdfsfs</p>
+        </div>
+    </div>
 </body>
 
 </html>
