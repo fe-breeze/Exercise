@@ -1,0 +1,530 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"mari",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"op",
+				"openId"
+			],
+			[
+				"f",
+				"float"
+			],
+			[
+				"clo",
+				"color"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"po",
+				"pos	position: ${1:relative};"
+			],
+			[
+				"p",
+				"p	padding"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"tex",
+				"text-align-last"
+			],
+			[
+				"fl",
+				"fl	float: ${1:left};"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"task",
+				"task3_files/"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"bold",
+				"bolder"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"bo",
+				"bolder"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"bgc",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "celian.html",
+			"settings":
+			{
+				"buffer_size": 4848,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mytask2.html",
+			"settings":
+			{
+				"buffer_size": 10028,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 367.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/cc/codes/Exercise/mytask3.html",
+		"/Users/cc/codes/Exercise/task3.html",
+		"/Users/cc/codes/Exercise/mytask2.html",
+		"/Users/cc/codes/Exercise/index.html",
+		"/Users/cc/codes/Exercise/exercise.html",
+		"/Users/cc/codes/Exercise/dd.html",
+		"/Users/cc/codes/Exercise/lianxi_dong.html",
+		"/Users/cc/codes/Exercise/task4.html",
+		"/Users/cc/codes/Exercise/my task.html",
+		"/Users/cc/codes/Exercise/app.js",
+		"/Users/cc/codes/new-h5/scripts/common/apiConfig.coffee",
+		"/Users/cc/codes/new-h5/views/user-center-index.vue",
+		"/Users/cc/codes/new-h5/components/action-loading.vue",
+		"/Users/cc/codes/new-h5/scripts/router/index.coffee",
+		"/Users/cc/codes/new-h5/views/users-complete-information.vue",
+		"/Users/cc/codes/new-h5/webpack.config.js",
+		"/Users/cc/codes/new-h5/components/header.vue",
+		"/Users/cc/codes/new-h5/components/add-coupon.vue",
+		"/Users/cc/codes/new-h5/stylesheets/pages/add-coupon.scss",
+		"/Users/cc/codes/Exercise/picture.html",
+		"/Users/cc/codes/Exercise/task2.html",
+		"/Users/cc/codes/IEF-FE/task2/task2.html",
+		"/Users/cc/codes/Exercise/aaaa.html",
+		"/Users/cc/codes/Exercise/sanlan.html",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/cc/codes/Exercise/buju.html",
+		"/Users/cc/codes/Exercise/lucky.html",
+		"/Users/cc/codes/Exercise/tasksanlan.html",
+		"/Users/cc/codes/new-h5/fake-response/can-use-coupons.json",
+		"/Users/cc/codes/Exercise/.gitignore",
+		"/Users/cc/codes/Exercise/lucky",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Installed Packages/Material Theme.sublime-package",
+		"/Users/cc/codes/IEF-FE/.gitignore",
+		"/Users/cc/codes/ex/dd.html",
+		"/Users/cc/codes/ex/picture.html",
+		"/Users/cc/Desktop/shipin.html",
+		"/Users/cc/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"http.get",
+			"uploaderObj",
+			"uploader",
+			"submitInfo",
+			"uploaderInit",
+			"modalUpdateShow",
+			"modalRushShow",
+			"updateAudit",
+			"pageNo",
+			"API",
+			"$http",
+			"couponId",
+			"allCanUseMoney",
+			"concanUseCoupons",
+			"con",
+			"ordercoupons.ihtml",
+			"coupon",
+			"newOrder",
+			"newOrder.cost",
+			"payFee",
+			"newCouponId",
+			"优惠券加载失败",
+			"errMsg",
+			"addCoupon",
+			"rapServerCoupons",
+			"addNewCoupon",
+			"addCoupon",
+			"sortCoupons",
+			"}\n",
+			"sortCoupons",
+			"stateFormat",
+			"expiredDate",
+			"expiredDateFormat",
+			"payFee",
+			"newOrder",
+			"_coupons",
+			"endTime",
+			"couponsMoney",
+			"couponsNo",
+			"couponId",
+			"pageSize",
+			"pageNo",
+			"main",
+			"ight-box",
+			"logo",
+			"box",
+			"task3_files",
+			"img",
+			"div",
+			"        <dt>fdskfjsdkl</dt>\n        <dd><input type=\"text\">\n            <div>fsdjfhsd</div>\n        </dd>",
+			"dt",
+			"picture",
+			"Theme",
+			"theme",
+			"th",
+			"ruleActived",
+			"reason",
+			"reasonSelected",
+			"showRules",
+			"this.reasons",
+			"result",
+			"res",
+			"取消订单",
+			"sortCoupons",
+			".idea",
+			"dd.html",
+			"dd",
+			"RtVariables",
+			"button",
+			"task.html",
+			"lianxi.html",
+			"body",
+			"bootstrapped",
+			"// "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "celian.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1935,
+								1935
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1600.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "mytask2.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10028,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3303,
+								3303
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3316.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "celian.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"views/users-complete-information.vue",
+				"views/users-complete-information.vue"
+			],
+			[
+				"views/user-center-index.vue",
+				"views/user-center-index.vue"
+			],
+			[
+				"views/orders-info.vue",
+				"views/orders-info.vue"
+			],
+			[
+				"tylesheets/pages/add-coupon.scss",
+				"stylesheets/pages/add-coupon.scss"
+			],
+			[
+				"components/add-coupon.vue",
+				"components/add-coupon.vue"
+			],
+			[
+				"views/expired-coupons.vue",
+				"views/expired-coupons.vue"
+			],
+			[
+				"views/used-coupons.vue",
+				"views/used-coupons.vue"
+			],
+			[
+				"views/coupon-select.vue",
+				"views/coupon-select.vue"
+			],
+			[
+				"can-use-coupons.vue",
+				"views/can-use-coupons.vue"
+			],
+			[
+				"can-use-coupons",
+				"fake-response/can-use-coupons.json"
+			],
+			[
+				"views/cancle-order.vue",
+				"views/cancle-order.vue"
+			],
+			[
+				"pict",
+				"picture.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 195.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

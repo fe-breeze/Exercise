@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>my task5</title>
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        width: 99%;
+        background-color: #F0F0F0;
+    }
+    
+    header {
+        float: left;
+        border: 1px solid black;
+        background-color: black;
+        width: 99%;
+        line-height: 60px;
+        height: 60px;
+    }
+    
+    .baidu {
+        float: left;
+        width: 150px;
+        height: 80px;
+        margin-left: 20px;
+    }
+    
+    .nav {
+        float: right;
+        margin: 0;
+    }
+    
+    .nav li {
+        float: left;
+        margin-right: 20px;
+    }
+    
+    .nav li a {
+        display: inline-block;
+        line-height: 60px;
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    
+    .wrapper {
+        float: right;
+        margin-left: 20px;
+        margin-top: 20px;
+        padding-left: 20px;
+        margin-right: 10px;
+        border-top: 1px solid #C2C2C2;
+        border-left: 1px solid #C2C2C2;
+        border-right: 3px solid #717171;
+        border-bottom: 3px solid #717171;
+        width: 30%;
+        height: auto;
+    }
+    
+    .title {
+        font-size: 16px;
+        line-height: 40px;
+        height: 40px;
+        border-left: 2px solid black;
+        padding-left: 20px;
+    }
+    
+    dl {
+        margin-left: 5%;
+        overflow: hidden;
+    }
+    
+    dl dt {
+        float: left;
+        font-size: 12px;
+        text-align: right;
+        line-height: 24px;
+        width: 150px;
+        margin-right: 16px;
+    }
+    
+    dl dt+dd {
+        float: left;
+        margin-left: 0;
+    }
+    
+    dl dt+dd div input {
+        height: 18px;
+    }
+    
+    .geshi {
+        font-size: 12px;
+        margin-top: 10px;
+        color: #c3c3c3;
+    }
+    
+    .item1 {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    
+    .item2 {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    
+    .item3 {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    
+    textarea {
+        font-size: 15px;
+    }
+    
+    button {
+        height: 50px;
+        width: 90%;
+        border: 1px solid blue;
+        background-color: blue;
+        color: white;
+        font-size: 15px;
+        border-radius: 12px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    
+    .container {
+        clear: left;
+        float: left;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-right: 40px;
+        padding-left: 20px;
+        border-top: 1px solid #C2C2C2;
+        border-left: 1px solid #C2C2C2;
+        border-right: 3px solid #717171;
+        border-bottom: 3px solid #717171;
+        width: 60%;
+        height: auto;
+    }
+    
+    .photo li {
+        float: left;
+        margin-right: 15px;
+    }
+    
+    .photo li:nth-of-type(6) {
+        clear: left;
+    }
+    
+    .title1 {
+        font-size: 24px;
+    }
+    
+    .title2 {
+        font-size: 18px;
+    }
+    
+    .p1 {
+        font-size: 15px;
+    }
+    
+    .p2 {
+        font-size: 15px;
+        text-indent: 2em;
+        line-height: 1.8;
+    }
+    
+    .picture1 {
+        height: 200px;
+        width: 250px;
+        border: 1px solid black;
+        margin-right: 500px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .project {
+        list-style-type: none;
+        line-height: 1.8;
+    }
+    
+    .theme {
+        font-size: 20px;
+    }
+    
+    .photo li {
+        list-style-type: none;
+        border: 1px solid black;
+        height: 110px;
+        width: 120px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .photo li p {
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .photo li img {
+        height: 65px;
+        width: 90px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .project2 {
+        line-height: 1.5;
+        font-size: 14px;
+    }
+    
+    table {
+        width: 96%;
+        border: 2px solid #c3c3c3;
+        background-color: #fff;
+        color: #000;
+        text-align: left;
+        border-collapse: collapse;
+    }
+    
+    table tr {
+        height: 20px;
+        font-size: 15px;
+    }
+    
+    table tr td:first-child,
+    table tr td:first-child+td {
+        width: 40%;
+    }
+    
+    thead {
+        background-color: #000;
+        color: #fff;
+    }
+    
+    tfoot {
+        background-color: #C1C1C1;
+        color: black;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="baidu" src="task3_files/0a9c7b899e510fb385a2333cd933c895d0430cb7.jpg" alt="百度">
+        <ul class="nav">
+            <li><a href="http://www.baidu.com">导航链接1</a></li>
+            <li><a href="http://www.baidu.com">导航链接2</a></li>
+            <li><a href="http://www.baidu.com">导航链接3</a></li>
+            <li><a href="http://www.baidu.com">导航链接4</a></li>
+        </ul>
+    </header>
+    </section>
+    <section class="wrapper">
+        <h2 class="title">这里以后是一个侧栏，这是侧栏标题</h2>
+        <dl>
+            <dt>请输入邮箱地址</dt>
+            <dd>
+                <input type="text" name="email" value="这是一个文本输入框">
+                <div class="geshi">邮箱地址请按要求格式输入</div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>请输入密码</dt>
+            <dd>
+                <input type="password" name="password" value="12345678">
+            </dd>
+        </dl>
+        <dl>
+            <dt>请重复输入密码</dt>
+            <dd>
+                <input type="password" name="password" value="12345678">
+                <div class="geshi">密码为6-16位英文数字组合</div>
+            </dd>
+        </dl>
+        <dl>
+            <dt>性别</dt>
+            <dd class="item1">
+                <input type="radio" name="sex" value="male">
+                <label>男</label>
+                <input type="radio" name="sex" value="female">
+                <label>女</label>
+            </dd>
+        </dl>
+        <dl>
+            <dt>城市</dt>
+            <dd class="item2">
+                <select>
+                    <option value="北京">北京</option>
+                    <option value="上海">上海</option>
+                    <option value="广州">广州</option>
+                </select>
+            </dd>
+        </dl>
+        <dl>
+            <dt>爱好</dt>
+            <dd class="item3">
+                <input type="checkbox" value="sport">
+                <label>运动</label>
+                <input type="checkbox" value="art">
+                <label>艺术</label>
+                <input type="checkbox" value="science">
+                <label>科学</label>
+            </dd>
+        </dl>
+        <dl>
+            <dt>个人描述</dt>
+            <dd>
+                <textarea cols="20" rows="5">这是一个多行输入框，请输入您的个人自我评价。</textarea>
+            </dd>
+        </dl>
+        <button>确认提交</button>
+    </section>
+    <section class="container">
+        <h1 class="title1">文章一级标题</h1>
+        <h2 class="title2">文章二级标题</h2>
+        <p class="p1">文章作者&nbsp;文章发表时间</p>
+        <p class="p2">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+            <br> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+            <a href="http://www.baidu.com" target="_blank">这里有一个链接连接到百度，在新网页中打开，</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有一个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+            <img class="picture1" src="task3_files/201607191310274eec0_550.jpg" alt="巴图"> </p>
+        <p class="p2">
+            这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+            <a href="http://ife.baidu.com" target="_blank">这里有一个链接连接到百度，在新网页中打开，</a>这是一个很长很长的段落，这是一个很长很长的段落，这里被强调了，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这里有一个粗体字，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+        </p>
+    </section>
+    <section class="container">
+        <h1 class="title1">另一篇文章一级标题</h1>
+        <h2 class="title2">文章二级标题</h2>
+        <p class="p1">文章作者&nbsp;文章发表时间</p>
+        <p class="p2">这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+            <br> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+            <a href="http://www.baidu.com" target="_blank">这里有一个链接连接到百度，在新网页中打开，</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有一个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。<img class="picture1" src="task3_files/201607191310274eec0_550.jpg" alt="巴图"></p>
+        <ul class="project">
+            <li>项目列表1</li>
+            <li>项目列表2</li>
+            <li>项目列表3</li>
+        </ul>
+    </section>
+    <section class="container">
+        <h2 class="theme">图片</h2>
+        <ul class="photo">
+            <li>
+                <p>好看的图片</p>
+                <img src="task3_files/201607191310274eec0_550.jpg" alt="巴图">
+            </li>
+            <li>
+                <p>好看的图片</p>
+                <img src="task3_files/201607191310274eec0_550.jpg" alt="巴图">
+            </li>
+            <li>
+                <p>好看的图片</p>
+                <img src="task3_files/201607191310274eec0_550.jpg" alt="巴图">
+            </li>
+            <li>
+                <p>好看的图片</p>
+                <img src="task3_files/201607191310274eec0_550.jpg" alt="巴图">
+            </li>
+            <li>
+                <p>好看的图片</p>
+                <img src="task3_files/201607191310274eec0_550.jpg" alt="巴图">
+            </li>
+            <li>
+                <p>好看的图片</p>
+                <img src="task3_files/201607191310274eec0_550.jpg" alt="巴图">
+            </li>
+            <li>
+                <p>好看的图片</p>
+                <img src="task3_files/201607191310274eec0_550.jpg" alt="巴图">
+            </li>
+            <li>
+                <p>好看的图片</p>
+                <img src="task3_files/201607191310274eec0_550.jpg" alt="巴图">
+            </li>
+            <li>
+                <p>好看的图片</p>
+                <img src="task3_files/201607191310274eec0_550.jpg" alt="巴图">
+            </li>
+            <li>
+                <p>好看的图片</p>
+                <img src="task3_files/201607191310274eec0_550.jpg" alt="巴图">
+            </li>
+        </ul>
+    </section>
+    <section class="container">
+        <h1 class="title1">最后一篇文章一级标题</h1>
+        <h2 class="title2">文章二级标题</h2>
+        <p class="p1">文章作者&nbsp;文章发表时间</p>
+        <ol class="project2">
+            <li>排名1</li>
+            <li>排名2</li>
+            <li>排名3</li>
+        </ol>
+        <p class="p2">下面是一个表格</p>
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>表头</td>
+                    <td>表头</td>
+                    <td>表头</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td>
+                        <a href="http://www.baidu.com">操作</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td>
+                        <a href="http://www.baidu.com">操作</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td>
+                        <a href="http://www.baidu.com">操作</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>表内容单元格</td>
+                    <td>表内容单元格</td>
+                    <td>
+                        <a href="http://www.baidu.com">操作</a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>总计</th>
+                    <th colspan="2">1000</th>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+</body>
+
+</html>
