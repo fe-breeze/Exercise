@@ -59,63 +59,111 @@
         margin-left: 20%;
         overflow: hidden;
     }
-   dl dt{
-    float:left;
-    margin-right: 16px;
-    font-size: 12px;
-    text-align: right;
-    line-height: 24px;
-    width:150px;
+    
+    dl dt {
+        float: left;
+        margin-right: 16px;
+        font-size: 12px;
+        text-align: right;
+        line-height: 24px;
+        width: 150px;
+    }
+    
+    dl dt+dd {
+        float: left;
+        margin-left: 0;
+    }
+    
+    dl dt+dd div input {
+        height: 18px;
+    }
+    
+    .geshi {
+        font-size: 10px;
+        margin-top: 10px;
+        color: #c3c3c3;
+    }
+    
+    .item1 {
+        font-size: 12px;
+    }
+    
+    .item2 {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+    
+    .item3 {
+        margin-bottom: 15px;
+    }
+    
+    textarea {
+        font-size: 16px;
+    }
+    
+    button {
+        border: 1px solid blue;
+        background-color: blue;
+        width: 90%;
+        height: 50px;
+        color: white;
+        font-size: 16px;
+        border-radius: 12px;
+        margin-left: 60px;
+    }
+    
+    .banquan {
+        background-color: #000;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid black;
+        width: 94%;
+        margin-left: 40px;
+        margin-top: 10px;
+        border-radius: 12px;
+    }
+    .container{
+        width: 90%;
+        height: auto;
+        border: 3px solid gray;
+        margin-left: 40px;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+    .theme{
+        font-size: 15px;
+        font-style: italic;
+        line-height:40px; 
+        border-left: 3px solid black;
+         padding-left: 30px;
+         margin-left: 20px;
+         margin-bottom: 20px;
+    }
+   .list li{
+        border: 1px solid black;
+        height: 150px;
+        width: 200px;
+        list-style-type: none;
+        float:left;
+        margin-right:20px;
    }
-   dl dt+dd{
-    float:left;
-    margin-left: 0;
+   .list li p{
+       text-align: center;
+       color: brown;
+       font-size: 10px;
    }
-dl dt+dd div input{
-   height:18px;
-}
-.geshi{
-  font-size: 10px;
-  margin-top: 10px;
-  color: #c3c3c3;
-}
-.item1{
-font-size: 12px;
-}
-.item2{
-    font-size: 12px;
-    margin-top: 2px;
-}
-.item3{
-    margin-bottom: 15px;
-}
-textarea{
-    font-size: 16px;
-}
-button{
-    border:1px solid blue;
-    background-color: blue;
-    width:90%;
-    height:50px;
-    color: white;
-    font-size: 16px;
-    border-radius: 12px;
-    margin-left: 60px;
-}
-.banquan{
-    background-color: #000;
-    font-size: 14px;
-    color: #fff;
-    text-align: center;
-    height:40px;
-    line-height: 40px;
-    border:1px solid black;
-    width:94%;
-    margin-left: 40px;
-    margin-top: 10px;
-    border-radius: 12px;
-  }
-</style>
+   .list li img{
+       float:left;
+       height: 100px;
+       width: 150px;
+       margin:0;
+       padding:0;
+       margin-left: 20px;
+   }
+    </style>
 </head>
 <body>
     <section class="wrapper">
@@ -142,65 +190,87 @@ button{
     <section class="wrapper-last">
         <h2 class="title">这里以后是一个侧栏，这是侧栏的标题</h2>
         <form>
-        <dl>
-            <dt>请输入邮箱地址</dt>
-            <dd>
-                <input class="mima" type="text" name="email" value="这是一个文本输入框">
-                <div class="geshi">邮箱地址请按要求格式输入</div>
-            </dd>
+            <dl>
+                <dt>请输入邮箱地址</dt>
+                <dd>
+                    <input class="mima" type="text" name="email" value="这是一个文本输入框">
+                    <div class="geshi">邮箱地址请按要求格式输入</div>
+                </dd>
             </dl>
             <dl>
-            <dt>请输入密码</dt>
-            <dd>
-                <input type="password" name="password" value="12345678">
-            </dd>
+                <dt>请输入密码</dt>
+                <dd>
+                    <input type="password" name="password" value="12345678">
+                </dd>
             </dl>
             <dl>
-            <dt>请重复输入密码</dt>
-            <dd>
-                <input type="password" name="" value="12345678">
-                <div class="geshi">密码为6-16位字母与数字结合</div>
-            </dd>
+                <dt>请重复输入密码</dt>
+                <dd>
+                    <input type="password" name="" value="12345678">
+                    <div class="geshi">密码为6-16位字母与数字结合</div>
+                </dd>
             </dl>
             <dl>
-            <dt>性别</dt>
-            <dd class="item1">
-                <label>男</label>
-                <input type="radio" name="sex" value="male">
-                <label>女</label>
-                <input type="radio" name="sex" value="female">
-            </dd>
+                <dt>性别</dt>
+                <dd class="item1">
+                    <label>男</label>
+                    <input type="radio" name="sex" value="male">
+                    <label>女</label>
+                    <input type="radio" name="sex" value="female">
+                </dd>
             </dl>
             <dl>
-            <dt>城市</dt>
-            <select name="" id="" >
-                <option value="北京">北京</option>
-                <option value="上海">上海</option>
-                <option value="广州">广州</option>
-            </select>
+                <dt>城市</dt>
+                <select name="" id="">
+                    <option value="北京">北京</option>
+                    <option value="上海">上海</option>
+                    <option value="广州">广州</option>
+                </select>
             </dl>
             <dl>
-            <dt>爱好</dt>
-            <dd class="item2">
-                <input type="checkbox" name="sport" value="运动">
-                <label>运动</label>
-                <input type="checkbox" name="sport" value="art">
-                <label>艺术</label>
-                <input type="checkbox" name="sport" value="science">
-                <label>科学</label>
-            </dd>
+                <dt>爱好</dt>
+                <dd class="item2">
+                    <input type="checkbox" name="sport" value="运动">
+                    <label>运动</label>
+                    <input type="checkbox" name="sport" value="art">
+                    <label>艺术</label>
+                    <input type="checkbox" name="sport" value="science">
+                    <label>科学</label>
+                </dd>
             </dl>
             <dl>
-            <dt class="item3">个人描述</dt>
-            <textarea name="个人描述" cols="80" rows="4">
-这是一个多行输入框，请输入您的个人描述信息。
-            </textarea>
+                <dt class="item3">个人描述</dt>
+                <textarea name="个人描述" cols="80" rows="4">这是一个多行输入框，请输入您的个人描述信息。
+                </textarea>
             </dl>
             <button>确认提交</button>
-            </form>
+        </form>
     </section>
-    <footer class="banquan">
-        版权所有&copy;
-    </footer>
+    <section class="container">
+        <h1 class="theme">Beautiful Picture</h1>
+        <ul class="list">
+            <li>
+                <p> 美图</p>
+                <img src="task3_files/201607191310274eec0_550.jpg" alt="巴图">
+            </li>
+            <li>
+                <p> 美图</p>
+                <img src="task3_files/201607191310274eec0_550.jpg" alt="巴图">
+            </li>
+            <li>
+                <p> 美图</p>
+                <img src="task3_files/201607191310274eec0_550.jpg" alt="巴图">
+            </li>
+            <li>
+                <p> 美图</p>
+                <img src="task3_files/201607191310274eec0_550.jpg" alt="巴图">
+            </li>
+            <li>
+                <p> 美图</p>
+                <img src="task3_files/201607191310274eec0_550.jpg" alt="巴图">
+            </li>
+        </ul>
+    </section>
 </body>
+
 </html>
