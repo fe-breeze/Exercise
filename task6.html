@@ -1,16 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>task6</title>
-    <style>
-        *{
-        margin: 0;
-        padding: 0;
-        }
-    </style>
+<meta charset="utf-8">
+<title>task6</title>
 </head>
 <body>
-    
+<p id="demo"></p>
+<script>
+    /*document.getElementById("demo").innerHTML=123e5;
+    document.getElementById("demo").innerHTML='John Doe'
+    document.getElementById("demo").innerHTML=10/10;
+    var    length;
+    lenght  =  6;
+    document.getElementById("demo").innerHTML=length;
+    document.getElementById("demo").innerHTML=(5+6)*10;
+    var x, y, z;
+    x=5
+    y=6;
+    z=(x+y)*10;
+    document.getElementById("demo").innerHTML=z;
+    javascript有多种运算符包括(赋值，算术，位运算符，以及条件，比较和逻辑运算符)
+    JavaScript是一个脚本语言，它轻量级但功能强大
+在编程中，一个字面量是一个常量，且字面量是一个恒定的固定的值，而变量通常是可变的。
+JavaScript是一门为网页编辑添加交互功能的编程语言(ps游戏，动态样式，动画等.......)
+变量是一个名称，字面量是一个值。
+JavaScript关键字必须以字母，下划线或美元符号开始，且后续字符可以是字母，数字，下划线或者美元符号
+（ps数字不允许作为首字符出现)
+JavaScript有多种数据类型：
+主数据类型：字符串，数字，Boolean(布尔值)；
+符合数据类型：object，数组(Array);
+特定数据类型：null(空值)，undefined(未定义)
+variables(变量)，它是存储数据的一个容器。*/
+my variable='Bob';
+var  myvariable='Bob';
+myvariable='Steve';
+Array:它是一种允许存储多个值在一个引用里面的结构。如：
+var myvariable=[1,'Bob', 'Steve',10];
+调用数组元素只需
+myvariable[0]等.............
+var iceCream ='chocolate';
+if (iceCream==='chocolate')
+{
+    alert ('Yay,I love chocolate ice cream!');
+}
+else{
+    alert('Awww,but chocolate is my favorite...');
+}
+var myvariable=document.querySelector('h1');
+alert('hello!');
+function multiply(num1,num2)
+{
+    var result=num1*num2;
+    return result;
+}
+document.querySelector('html'). onclick=function()
+{
+    alert ('ouch! Stop poking me!');
+}
+document.querySelector('html'). onclick =function(){};
+var myHTML=document.querySelector('html');
+myHTML. onclick=function(){};
+
+
+var myImage=document.querySelector('img');
+myImage. onclick=function()
+{
+    var mySrc=myImage.getAttribute('src');
+    if( mySrc='images/firefox-icom.png')
+    {
+        myImage.setAttribute('src','images/firefox-icom.png');}
+    else{
+        myImage.setAttribute('src','images/firefox-icom.png');
+    }
+}
+
+<button>Change user</button>
+var mybutton=document.querySelector('button');
+var myHeading=document.querySelector('h1')
+function setUserName()
+{
+    var myName=prompt('Please enter your name.');
+    localStroage.setItem('name',myName);
+    myHeading.innerHTML='Mozilla is cool,'+myName;
+}
+
+if(!localStroage.getItem('name'))
+{
+    setUserName();
+}
+else{
+    var storedName=localStroage.getItem('name');
+    myHeading.innerHTML='Mozilla is cool,'+storedName;
+}
+myButton. onclick=function()
+{
+    setUserName();
+}
+</script>
 </body>
 </html>
