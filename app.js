@@ -1,17 +1,7 @@
-var myButton = document.querySelector('button');
-var myHeading = document.querySelector('h1');
-
-function setUserName() {
-    var myName = prompt('Please enter your name.');
-    localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+"use strict"
+let step;
+for (step = 0; step < 5; step++) {
+  // Runs 5 times, with values of step 0 through 4.
+  console.log('Walking east one step'+step);
 }
-if (!localStorage.getItem('name')) {
-    setUserName();
-} else {
-    var storedName = localStorage.getItem('name');
-    myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
-}
-myButton.onclick = function() {
-    setUserName();
-}
+alert(step)
