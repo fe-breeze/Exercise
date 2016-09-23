@@ -1,23 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Task12.html</title>
-    style{
-    
-    }
+  <meta charset="UTF-8">
+  <title>Task12.html</title>
 </head>
+
 <body>
-    <h1>This is a heading</h1>
-    <p>The first paragraph.</p>
-    <p>The second paragraph.</p>
-    <p>The first paragraph.</p>
-    <p>The second paragraph.</p>
-    <p>The first paragraph.</p>
-    <p>The second paragraph.</p>
-    <p>The first paragraph.</p>
-    <p>The second paragraph.</p>
-    <p>The first paragraph.</p>
-    <p>The second paragraph.</p>
-    </body>
+  <div id="div1">
+    <p id="p1">This is a paragraph.</p>
+    <p id="p2">This is another paragraph.</p>
+    <p id="p3">This is last paragraph.</p>
+  </div>
+  <script>
+  //var para = document.createElement("p");
+  //var node = document.createTextNode("This is a totally new paragraph.");
+  //para.appendChild(node);
+  //var element = document.getElementById("div1");
+  //element.appendChild(para);
+  //var para=document.createElement("p");
+  //var node=document.createTextNode("This is a totally new paragraph.");
+  //para.appendChild(node);
+  //var element=document.getElementById("div1");
+  //var child=document.getElementById("p1");
+  //element.insertBefore(para,child);
+  //var parent = document.getElementById("div1");
+  //var child = document.getElementById("p2");
+  //parent.removeChild(child);
+  //var child = document.getElementById("p1");
+  //parent.removeChild(child);
+  var element = document.getElementById("div1");
+  var child = document.getElementById("p1");
+  var para = document.createElement("p");
+  var node = document.createTextNode("This is a totally new paragraph.");
+  para.appendChild(node);
+  element.replaceChild(para,child);
+  // var para = document.createElement("p"); 
+  // var node = document.createTextNode("This is new."); 
+  // para.appendChild(node); 
+  // parent.replaceChild(para, child);
+
+  </script>
+</body>
+
 </html>
