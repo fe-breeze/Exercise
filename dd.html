@@ -5,72 +5,112 @@
   <meta charset="UTF-8">
   <title>Task12.html</title>
 </head>
+<style>
+.banner {
+  width: 250px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  background-color: red;
+}
+
+.banner ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sliders {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  animation: .5s slider-init linear;
+}
+
+.sliders li {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: .5s slider-out linear;
+}
+
+#slider-1 {
+  background-color: red;
+}
+
+#slider-2 {
+  background-color: green;
+}
+
+#slider-3 {
+  background-color: blue;
+}
+
+.sliders li:target {
+  left: 0%;
+  animation: .5s slider-in linear;
+}
+
+@keyframes slider-init {
+  0% {
+    left: -100%
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes slider-out {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes slider-in {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.btns {
+  z-index: 100;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+
+.btns a {
+  display: block;
+  margin: 0 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  text-decoration: none;
+  padding: 10px 14px;
+}
+</style>
 
 <body>
-  <!-- <div id="div1">
-    <p id="p1">This is a paragraph.</p>
-    <p id="p2">This is another paragraph.</p>
-    <p id="p3">This is last paragraph.</p>
-  </div> -->
-<!-- <h1 onclick="changetext(this)">点击此文本</h1> -->
-<!-- <p>点击按钮来执行 <b>displayDate()</b> 函数。</p> -->
-<!-- <button onclick="displayDate()">Try and try.</button> -->
-  <script>
-  //var para = document.createElement("p");
-  //var node = document.createTextNode("This is a totally new paragraph.");
-  //para.appendChild(node);
-  //var element = document.getElementById("div1");
-  //element.appendChild(para);
-  //var para=document.createElement("p");
-  //var node=document.createTextNode("This is a totally new paragraph.");
-  //para.appendChild(node);
-  //var element=document.getElementById("div1");
-  //var child=document.getElementById("p1");
-  //element.insertBefore(para,child);
-  //var parent = document.getElementById("div1");
-  //var child = document.getElementById("p2");
-  //parent.removeChild(child);
-  //var child = document.getElementById("p1");
-  //parent.removeChild(child);
-  //var element = document.getElementById("div1");
-  //var child = document.getElementById("p1");
-  //var para = document.createElement("p");
-  //var node = document.createTextNode("This is a totally new paragraph.");
-  //para.appendChild(node);
-  //element.replaceChild(para,child);
-  // var para = document.createElement("p"); 
-  // var node = document.createTextNode("This is new."); 
-  // para.appendChild(node); 
-  // parent.replaceChild(para, child);
-  //function changetext(id){
-    //id.innerHTML="Hello Everyone!";
-  //}
-  //function displayDate() {
-    //document.getElementById("demo").innerHTML = Date();
-  //}
-  //function checkcookies(){
-    //if(navigator.cookieEnabled==true){
-    // alert("Cookies are enabled")
-    //}
-    //else{
-    //  alert("Cookies are not enabled")
-   // }
- // }
- function (myfuction)(){
-  var x=document.getElementById("name");
-  x.value =x.value. toUpperCase();
-  //var x=document.getElementById("fname");
-///x.value=x.value.toUpperCase();
-}
- }
-  </script>
-  <!-- <p id="demo"></p> -->
-  <!-- <p>弹出的提示框会告诉你浏览器是否已启用 cookie。</p> -->
-  请输入您的英文名:
-  <input type="text" id="name" onchange="myfuction()">
-  <p>当你离开输入框时，被触发的函数会把你输入的文本转换为大写字母。</p>
-<!--   请输入你的英文名：<input type="text" id="fname" onchange="myFunction()">
-<p>当你离开输入框时，被触发的函数会把你输入的文本转换为大写字母。</p> -->
-
+  <div class="banner">
+    <ul class="sliders">
+      <li id="slider-1"></li>
+      <li id="slider-2"></li>
+      <li id="slider-3"></li>
+    </ul>
+    <div class="btns">
+      <a href="#slider-1">1</a>
+      <a href="#slider-2">2</a>
+      <a href="#slider-3">3</a>
+    </div>
+  </div>
 </body>
+
 </html>
