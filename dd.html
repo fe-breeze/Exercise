@@ -7,11 +7,14 @@
 </head>
 
 <body>
-  <div id="div1">
+  <!-- <div id="div1">
     <p id="p1">This is a paragraph.</p>
     <p id="p2">This is another paragraph.</p>
     <p id="p3">This is last paragraph.</p>
-  </div>
+  </div> -->
+<!-- <h1 onclick="changetext(this)">点击此文本</h1> -->
+<!-- <p>点击按钮来执行 <b>displayDate()</b> 函数。</p> -->
+<!-- <button onclick="displayDate()">Try and try.</button> -->
   <script>
   //var para = document.createElement("p");
   //var node = document.createTextNode("This is a totally new paragraph.");
@@ -29,18 +32,45 @@
   //parent.removeChild(child);
   //var child = document.getElementById("p1");
   //parent.removeChild(child);
-  var element = document.getElementById("div1");
-  var child = document.getElementById("p1");
-  var para = document.createElement("p");
-  var node = document.createTextNode("This is a totally new paragraph.");
-  para.appendChild(node);
-  element.replaceChild(para,child);
+  //var element = document.getElementById("div1");
+  //var child = document.getElementById("p1");
+  //var para = document.createElement("p");
+  //var node = document.createTextNode("This is a totally new paragraph.");
+  //para.appendChild(node);
+  //element.replaceChild(para,child);
   // var para = document.createElement("p"); 
   // var node = document.createTextNode("This is new."); 
   // para.appendChild(node); 
   // parent.replaceChild(para, child);
-
+  //function changetext(id){
+    //id.innerHTML="Hello Everyone!";
+  //}
+  //function displayDate() {
+    //document.getElementById("demo").innerHTML = Date();
+  //}
+  //function checkcookies(){
+    //if(navigator.cookieEnabled==true){
+    // alert("Cookies are enabled")
+    //}
+    //else{
+    //  alert("Cookies are not enabled")
+   // }
+ // }
+ function (myfuction)(){
+  var x=document.getElementById("name");
+  x.value =x.value. toUpperCase();
+  //var x=document.getElementById("fname");
+///x.value=x.value.toUpperCase();
+}
+ }
   </script>
-</body>
+  <!-- <p id="demo"></p> -->
+  <!-- <p>弹出的提示框会告诉你浏览器是否已启用 cookie。</p> -->
+  请输入您的英文名:
+  <input type="text" id="name" onchange="myfuction()">
+  <p>当你离开输入框时，被触发的函数会把你输入的文本转换为大写字母。</p>
+<!--   请输入你的英文名：<input type="text" id="fname" onchange="myFunction()">
+<p>当你离开输入框时，被触发的函数会把你输入的文本转换为大写字母。</p> -->
 
+</body>
 </html>
